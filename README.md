@@ -5,6 +5,10 @@ miss before code ships.
 
 This repository is the free community edition of `code-audit-cli`.
 
+Product page:
+
+https://yuan1521913.github.io/code-audit-community/
+
 ## What it checks
 
 | Rule | Severity | Typical signal |

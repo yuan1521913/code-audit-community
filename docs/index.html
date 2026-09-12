@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code Audit Community</title>
+  <meta name="description" content="A free, local-first scanner for common dangerous code patterns before release.">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="./">Code Audit Community</a>
+    <nav>
+      <a href="https://github.com/yuan1521913/code-audit-community">Source</a>
+      <a href="https://github.com/yuan1521913/code-audit-action">GitHub Action</a>
+      <a href="https://github.com/yuan1521913/code-audit-cli">Pro</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">MIT community edition</p>
+      <h1>Find dangerous code patterns before they ship.</h1>
+      <p class="lede">
+        A local-first quick scan for SQL concatenation, unsafe deserialization,
+        dynamic execution sinks, and reflected HTML. No account. No source upload.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/yuan1521913/code-audit-community/releases/tag/v0.1.0">Download v0.1.0</a>
+        <a class="button" href="https://github.com/yuan1521913/code-audit-action">Run in GitHub Actions</a>
+      </div>
+    </section>
+
+    <section class="install">
+      <div>
+        <p class="eyebrow">Install</p>
+        <h2>One Python package. One command.</h2>
+      </div>
+      <pre><code>python -m pip install code-audit-community
+code-audit-community path/to/project
+code-audit-community path/to/project --format json --output report.json</code></pre>
+    </section>
+
+    <section class="features">
+      <article>
+        <h3>Local by default</h3>
+        <p>The scanner reads files locally and does not upload source code, paths, or reports.</p>
+      </article>
+      <article>
+        <h3>Useful in CI</h3>
+        <p>Return exit code 1 when a high-risk finding is present, or export JSON for another step.</p>
+      </article>
+      <article>
+        <h3>Honest boundary</h3>
+        <p>Findings are review candidates. A clean scan does not prove that code is safe.</p>
+      </article>
+    </section>
+
+    <section class="scope">
+      <div>
+        <p class="eyebrow">Community rules</p>
+        <h2>Small, readable, and intentionally limited.</h2>
+      </div>
+      <ul>
+        <li><code>sql-concat</code><span>String-built SQL</span></li>
+        <li><code>pickle-loads</code><span>Unsafe deserialization</span></li>
+        <li><code>eval-exec-subprocess</code><span>Dynamic execution sinks</span></li>
+        <li><code>js-command-exec</code><span>JavaScript command execution</span></li>
+        <li><code>raw-html-reflect</code><span>Unescaped HTML reflection</span></li>
+      </ul>
+    </section>
+
+    <section class="pro">
+      <div>
+        <p class="eyebrow">Need the full scan?</p>
+        <h2>Move from a free check to a complete workflow.</h2>
+        <p>
+          Pro adds the complete multilingual rule set, HTML and SARIF CLI reports,
+          baseline review, commercial updates, and priority support.
+        </p>
+      </div>
+      <a class="button primary" href="https://github.com/yuan1521913/code-audit-cli">View Pro edition</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>Code Audit Community</span>
+    <span>MIT licensed. Automatic findings require human confirmation.</span>
+  </footer>
+</body>
+</html>
