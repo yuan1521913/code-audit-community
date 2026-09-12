@@ -7,3 +7,5 @@ build/
 dist/
 reports/
 *.sarif
+docs/page-desktop.png
+docs/page-mobile.png
