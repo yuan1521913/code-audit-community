@@ -53,6 +53,14 @@ The community edition intentionally does not include:
 The commercial edition is available from the product links on the
 [public product repository](https://github.com/yuan1521913/code-audit-cli).
 
+## GitHub Action
+
+Use the free GitHub Action for pull-request scans and SARIF output:
+
+```text
+https://github.com/yuan1521913/code-audit-action
+```
+
 ## Development
 
 ```bash
