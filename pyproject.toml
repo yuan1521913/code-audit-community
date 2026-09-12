@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-audit-community"
+version = "0.1.0"
+description = "Free community edition of a local-first code safety quick scan."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+
+[project.scripts]
+code-audit-community = "codeaudit_community.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
